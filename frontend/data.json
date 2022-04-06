@@ -1,0 +1,42 @@
+[
+    {
+        "filename": "bckgrnd.jpg",
+        "title": "Thunder Bluff"
+    },
+    {
+        "filename": "classicon_druid.jpg",
+        "title": "druid"
+    },
+    {
+        "filename": "classicon_hunter.jpg",
+        "title": "hunter"
+    },
+    {
+        "filename": "classicon_mage.jpg",
+        "title": "mage"
+    },
+    {
+        "filename": "classicon_paladin.jpg",
+        "title": "paladin"
+    },
+    {
+        "filename": "classicon_priest.jpg",
+        "title": "priest"
+    },
+    {
+        "filename": "classicon_rouge.jpg",
+        "title": "rouge"
+    },
+    {
+        "filename": "classicon_shaman.jpg",
+        "title": "shaman"
+    },
+    {
+        "filename": "classicon_warlock.jpg",
+        "title": "warlock"
+    },
+    {
+        "filename": "classicon_warrior.jpg",
+        "title": "warrior"
+    }
+]
