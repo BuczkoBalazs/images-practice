@@ -15,6 +15,10 @@ app.get("/", (request, response, next)=>{
     response.sendFile(path.join(`${__dirname}/../frontend/index.html`));
 });
 
+app.get("/img-list", (request, response, next)=>{
+    response.sendFile(path.join(`${__dirname}/../frontend/data.json`));
+});
+
 app.listen(port, ()=>{
     console.log(`http://127.0.0.1:${port}`)
 });
