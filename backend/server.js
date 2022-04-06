@@ -1,22 +1,20 @@
-const { response } = require("express");
 const express = require("express");
-const fs = require("fs");
 const path = require("path");
-const { stringify } = require("querystring");
 
-const app = express();
+
 const port = 9000;
+const app = express();
+const pathToFrontend = path.join(`${__dirname}/../frontend`);
 
 app.use(express.json());
+app.use('/pub', express.static(`${pathToFrontend}/pub`));
 
-app.use('/pub', express.static(`${__dirname}/../frontend/pub`));
-
-app.get("/", (request, response, next)=>{
-    response.sendFile(path.join(`${__dirname}/../frontend/index.html`));
+app.get("/", (request, response)=>{
+    response.sendFile(`${pathToFrontend}/index.html`);
 });
 
-app.get("/img-list", (request, response, next)=>{
-    response.sendFile(path.join(`${__dirname}/../frontend/data.json`));
+app.get("/img-list", (request, response)=>{
+    response.sendFile(`${pathToFrontend}/data.json`);
 });
 
 app.listen(port, ()=>{
