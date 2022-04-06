@@ -1,3 +1,6 @@
+import Swiper from "swiper";
+import "swiper/css";
+
 const parseJSON = async (url) => {
     const response = await fetch(url);
     return response.json();
@@ -21,9 +24,6 @@ const swiperSlideComponent = ({filename, title}) => {
         </div>
     `
 }
-
-
-
 
 const loadEvent = async (_) => {
 
